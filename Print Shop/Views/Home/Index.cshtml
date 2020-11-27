@@ -1,0 +1,36 @@
+﻿@model Print_Shop.Models.User
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="jumbotron">
+    <h1>Print Shop Gráfica</h1>
+    @if (Model != null && string.IsNullOrEmpty(Model.Company.Logo))
+    {
+        <img src="@Url.Content(Model.Company.Logo)" alt="Image" style="width:200px;height:200px;max-width:100%;height:auto;" />
+    }
+    <p class="lead"></p>
+    <p></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2></h2>
+        <p>
+            
+        </p>
+        <p></p>
+    </div>
+    <div class="col-md-4">
+        <h2></h2>
+        <p></p>
+        <p></a></p>
+    </div>
+    <div class="col-md-4">
+        <h2></h2>
+        <p>.</p>
+        <p></p>
+    </div>
+</div>
